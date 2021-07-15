@@ -8,7 +8,8 @@
 /*...........................
  common styles or utilities 
  .............................*/
-.body{
+
+ .body{
     margin: 0;
 }
 
@@ -239,6 +240,13 @@ p{
 ...................................... */
 
 @media only screen and (min-width:360px) and (max-width:640px) {
+    .img{
+        width: 256px;
+        height: 300px;
+        margin-top: 70px;
+        margin-right: 141px;
+      
+    }
     .players{
         grid-template-columns: repeat(1,1fr);
     }
@@ -266,7 +274,6 @@ p{
 
     .search-section{
         padding-top: 30px;
-        padding-left: 40px;
         text-align: right;
         margin-bottom: 5%;
      
