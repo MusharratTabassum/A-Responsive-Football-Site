@@ -1,45 +1,43 @@
-/* font */
+/*...................
+ font for top banner 
+...................*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 
+/*...........................
+ common styles or utilities 
+ .............................*/
 .body{
-    margin: 0px;
+    margin: 0;
 }
-.banner-text{
-   color: white;
- }
-.button-area{
-    display: flex;
-    align-items: center;
-}
+
 /*..................
   Top Banner styles
 ................ */
+
 .banner-container{
     display: flex;
     font-family: 'Poppins', sans-serif;
     background-color: #2D25A0;
-    margin-bottom: 86px;
-
-    padding-right: 141px;
-   
-
-}
+  }
+.banner-container:hover{
+      background-color: cornflowerblue;
+  }
 .half-width{
     width: 50%;
   
 }
-
-.half-width img{
-    width: 100%;
-    padding-left: 102px;
-   
-}
 .img{
     width: 556px;
     height: 438px;
-    margin-top: 83px;
+    margin-top: 70px;
     margin-right: 141px;
+  
+}
+.half-width img{
+    width: 100%;
+    padding-left: 102px;
    
 }
 .banner-title{
@@ -52,7 +50,6 @@
     margin-left: 156px;
   
 }
-
 .watch-button {
     text-decoration: none;
     background-color: #E02C6D;
@@ -60,8 +57,14 @@
     margin-top: 27px;
     margin-left: 156px;
     padding: 10px 24px;
+    border-radius: 5%;
+    font-family: 'Poppins', sans-serif;
  
 }
+.watch-button:hover{
+    padding: 20px 48px;
+}
+
 /*.................
     players styles
 ...................*/
@@ -78,12 +81,18 @@ p{
     color: #6C6C6C;
 
 }
+.players-section{
+    padding-left: 6%;
+    padding-right: 15%;
+}
 .players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-column-gap: 30px ;
-    grid-row-gap: 27px;
+    grid-column-gap: 27px ;
+    grid-row-gap: 30px;
     align-items: center;
+    margin-top: 70px;
+   
 }
 .player{
     width: 330px;
@@ -91,9 +100,8 @@ p{
     padding: 15px;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     margin-top: 20px;
- 
-
 }
+
 .player img{
     width: 300px;
     height: 256px;
@@ -106,7 +114,9 @@ p{
     display: flex;
     flex-direction: column;
 }
-/* footer styles */
+/*.............................................
+                footer styles 
+ ............................................*/
 .footer-section{
     
     margin-left: 475px;
@@ -115,7 +125,7 @@ p{
     width: 484px;
     height: 213px;
     align-items: center;
-   
+  
 }
 .footer-style {
 
@@ -147,11 +157,122 @@ p{
 }
 .copyright-section{
    margin-left: 124px;
- 
 }
 .footer-logo{
     width :483.87px;
     height:110px;
    
 }
+/* ....................
+      Search Section   
+   .................... */
+.search-section{
+    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 5%;
+    
+}
+#submit-button {
+    text-decoration: none;
+    background-image: linear-gradient(rgb(43, 110, 235), rgb(96, 126, 182));
+    padding: 10px 20px;
+    border-radius: 10%;
+    color: white;
+}
+#search-bar {
+    padding: 10px 150px;
+}
 
+.matches-search-section{
+    width: 60%;
+    height: 200px;
+    background-color: #8c84fc6e;
+    margin-left: 20%;
+    margin-top: 10%;
+}
+/*............................
+    Upcoming Match's Section     
+ ............................*/
+
+ .upcoming-section{
+     margin-left: 7%;
+     margin-top: 5%;
+     background-color:  #8c84fc6e;
+     width: 85%;
+     padding-bottom: 4%;
+     padding-top: 1%;
+     
+    
+ }
+.matches{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    padding-left: 5%;
+}
+
+.match{
+    width: 70%;
+    background-color: #463be76e;
+    padding: 2%;
+    margin-left: 0%;
+    margin-top: 3%;
+   
+}
+.match:hover{
+   background-color:#5f55f36e ;
+}
+
+.match-detail{
+    display: flex;
+
+}
+#h2-styling{
+    text-align: center; 
+    margin-top: 6%; 
+    margin-bottom: 4%;
+   
+}
+
+
+/* .....................................
+    media query wise functionality 
+...................................... */
+
+@media only screen and (min-width:360px) and (max-width:640px) {
+    .players{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+     .footer-section{
+    
+        margin-left: 0px;
+        margin-top: 160px;
+        margin-bottom: 63px;
+        width: 250px;
+        height: 113px;
+        align-items: center;
+      
+    }
+    .matches{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 5%;
+    }
+    .footer-logo{
+        width :300px;
+        height:110px;
+       
+    }
+
+    .search-section{
+        padding-top: 30px;
+        padding-left: 40px;
+        text-align: right;
+        margin-bottom: 5%;
+     
+    }
+    .copyright-section{
+        text-align: center;
+    }
+
+}
