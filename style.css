@@ -164,14 +164,25 @@ p{
     height:110px;
    
 }
-/* ....................
-      Search Section   
-   .................... */
+/* ..........................
+         Search Section   
+   ....................... */
+
+.matches-search-section{
+    width: 60%;
+    height: 200px;
+    background-color: #8c84fc6e;
+    margin-left: 20%;
+    margin-top: 10%;
+}  
 .search-section{
     padding-top: 30px;
     text-align: center;
     margin-bottom: 5%;
     
+}
+#search-bar {
+    padding: 10px 150px;
 }
 #submit-button {
     text-decoration: none;
@@ -180,17 +191,9 @@ p{
     border-radius: 10%;
     color: white;
 }
-#search-bar {
-    padding: 10px 150px;
-}
 
-.matches-search-section{
-    width: 60%;
-    height: 200px;
-    background-color: #8c84fc6e;
-    margin-left: 20%;
-    margin-top: 10%;
-}
+
+
 /*............................
     Upcoming Match's Section     
  ............................*/
