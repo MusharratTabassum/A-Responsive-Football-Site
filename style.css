@@ -228,7 +228,11 @@ p{
 
 .match-detail{
     display: flex;
+    
 
+}
+.info{
+    margin-left: 8%;
 }
 #h2-styling{
     text-align: center; 
@@ -243,6 +247,11 @@ p{
 ...................................... */
 
 @media only screen and (min-width:360px) and (max-width:640px) {
+    .banner-container{
+        
+        font-family: 'Poppins', sans-serif;
+        background-color: #2D25A0;
+      }
     .img{
         width: 256px;
         height: 300px;
